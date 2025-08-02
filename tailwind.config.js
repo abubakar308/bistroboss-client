@@ -10,6 +10,7 @@ export default {
     extend: {
       backgroundImage: {
         'service': "url('./src/assets/home/chef-service.jpg')",
+        'featured': "url('./src/assets/home/featured.jpg')",
       }
     },
   },

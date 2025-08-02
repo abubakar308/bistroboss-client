@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 const Navbar = () => {
     return (
         <div className="navbar bg-base-100">
@@ -20,15 +22,11 @@ const Navbar = () => {
             <ul
               tabIndex={0}
               className="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow">
-              <li><a>Item 1</a></li>
-              <li>
-                <a>Parent</a>
-                <ul className="p-2">
-                  <li><a>Submenu 1</a></li>
-                  <li><a>Submenu 2</a></li>
-                </ul>
-              </li>
-              <li><a>Item 3</a></li>
+              <li><a>Home</a></li>
+            <li><a>Contact Us</a></li>
+            <li><a>Dashboard</a></li>
+            <li><a>Our Menu</a></li>
+            <li><a>Our Shop</a></li>
             </ul>
           </div>
           <a className="btn btn-ghost text-xl">BISTO BOSS RESTURANT</a>
@@ -43,7 +41,7 @@ const Navbar = () => {
           </ul>
         </div>
         <div className="navbar-end">
-          <a className="btn">Login</a>
+          <Link to="/login" className="btn">Login</Link>
         </div>
       </div>
     );

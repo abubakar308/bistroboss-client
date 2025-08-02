@@ -1,5 +1,4 @@
 
-
 const Menulist = ({name,recipe,price,image}) => {
     return (
         <div >

@@ -16,7 +16,7 @@ const Menu = () => {
     return (
         <div>
             <Shared text="Check it out" title="from our menu"></Shared>
-        <div className="grid grid-cols-2 gap-3">
+        <div className="grid md:grid-cols-2 gap-3">
            {
             menues.slice(0,6).map(menu=> <Menulist key={menu._id}
             name={menu.name} recipe={menu.recipe}
