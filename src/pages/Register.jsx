@@ -1,8 +1,10 @@
 import { useContext } from "react";
 import { AuthContext } from "../authprovider/Authprovider";
+import { Link, useNavigate } from "react-router-dom";
 
 const Register = () => {
     const {setUser, createUser, updateUserProfile} = useContext(AuthContext);
+    const navigate = useNavigate();
     const handleRegister = e =>{
         e.preventDefault();
         const formData = e.target;
@@ -16,7 +18,10 @@ const Register = () => {
             const user = data.user
             console.log(user);
             updateUserProfile(name,photo)
-            .then()
+            .then(() => {
+                setUser(user);
+                navigate("/");
+            })
 
         })
         
@@ -65,6 +70,7 @@ const Register = () => {
                     <input type="submit" value="SignUp" />
                 </button>
               </div>
+               <p className="text-center">Already Have An account? <Link to="/login">  Login</Link></p>
             </form>
           </div>
         </div>
