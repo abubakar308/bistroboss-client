@@ -22,22 +22,22 @@ const Navbar = () => {
             <ul
               tabIndex={0}
               className="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow">
-              <li><a>Home</a></li>
-            <li><a>Contact Us</a></li>
-            <li><a>Dashboard</a></li>
-            <li><a>Our Menu</a></li>
-            <li><a>Our Shop</a></li>
+              <li><Link to="/">Home</Link></li>
+            <li><Link to="/contact us">Contact Us</Link></li>
+            <li><Link to="/dashboard">Dashboard</Link></li>
+            <li><Link to="/our-menu">Our Menu</Link></li>
+            <li><Link to="/our-shop">Our Shop</Link></li>
             </ul>
           </div>
           <a className="btn btn-ghost text-xl">BISTO BOSS RESTURANT</a>
         </div>
         <div className="navbar-center hidden lg:flex">
           <ul className="menu menu-horizontal px-1">
-            <li><a>Home</a></li>
-            <li><a>Contact Us</a></li>
-            <li><a>Dashboard</a></li>
-            <li><a>Our Menu</a></li>
-            <li><a>Our Shop</a></li>
+            <li><Link to="/">Home</Link></li>
+            <li><Link to="/contact us">Contact Us</Link></li>
+            <li><Link to="/dashboard">Dashboard</Link></li>
+            <li><Link to="/our-menu">Our Menu</Link></li>
+            <li><Link to="/our-shop">Our Shop</Link></li>
           </ul>
         </div>
         <div className="navbar-end">
